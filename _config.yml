@@ -3,13 +3,13 @@ baseurl: ""
 url: "https://sangmin-jeon.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Mini's Blog                                    # site's title
+title: 안녕 배추개                                   # site's title
 description: "A website with blog posts and pages"      # used by search engines
 avatar: assets/img/shiba-inu.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Welcome to Mini's blog  # Change Blog header text
+header_text: Hello!  # Change Blog header text
 header_feature_image: assets/img/header/botanical-garden.jpg
 header_feature_image_responsive: true
 footer_text: >
