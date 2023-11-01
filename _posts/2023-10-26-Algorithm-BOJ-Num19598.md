@@ -2,8 +2,8 @@
 layout: post
 title: BOJ_19598번_최소_회의실_개수
 color: rgb(50, 170, 250)
-feature-img: "assets/img/algoritms-img/BOJ_19598_title.png"
-thumbnail: "assets/img/algoritms-img/BOJ_19598_title.png"
+feature-img: "assets/img/algoritms-img/boj_image.png"
+thumbnail: "assets/img/algoritms-img/boj_image.png"
 tags: [BOJ, 그리디, 우선순위 큐, 정렬]
 ---
 
