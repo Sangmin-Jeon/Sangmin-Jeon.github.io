@@ -204,6 +204,7 @@ func count_outSider(students: Int, stuList: [Int], visited: inout [Bool]) -> Int
 <br/>
 
 * 참고로 swift로 입력 받는 부분이 궁금 하신 분들은 아래 코드를 참고 해주세요.   
+   
 ```swift
 import Foundation
 
