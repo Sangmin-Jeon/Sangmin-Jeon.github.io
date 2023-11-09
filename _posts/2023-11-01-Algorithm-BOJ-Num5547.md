@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BOJ_5547번_일루미네이션
+title: "[BOJ 5547번] 일루미네이션"
 color: rgb(50, 170, 250)
 feature-img: "assets/img/algoritms-img/boj_image.png"
 thumbnail: "assets/img/algoritms-img/boj_image.png"

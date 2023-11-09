@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BOJ_9466번_텀_프로젝트
+title: "[BOJ 9466번] 텀 프로젝트"
 color: rgb(50, 170, 250)
 feature-img: "assets/img/algoritms-img/boj_image.png"
 thumbnail: "assets/img/algoritms-img/boj_image.png"

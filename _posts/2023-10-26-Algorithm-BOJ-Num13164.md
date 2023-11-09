@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BOJ_13164번_행복유치원
+title: "[BOJ 13164번] 행복유치원"
 color: rgb(50, 170, 250)
 feature-img: "assets/img/algoritms-img/boj_image.png"
 thumbnail: "assets/img/algoritms-img/boj_image.png"
