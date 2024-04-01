@@ -2,8 +2,6 @@
 layout: post
 title: "[자료구조 & 알고리즘] Heap 알아보기 (Swift)"
 color: rgb(50, 170, 250)
-feature-img: ""
-thumbnail: "assets/img/algoritms-img/heap_title_img_.png"
 tags: [알고리즘, 자료구조, Heap]
 ---
 
