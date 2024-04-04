@@ -2,7 +2,6 @@
 layout: post
 title: "[자료구조 & 알고리즘] 우선순위 큐(Priority Queue) 알아보기 with Queue (Swift)"
 color: rgb(50, 170, 250)
-feature-img: ""
 tags: [자료구조, 알고리즘, 우선순위 큐, Queue, Heap]
 ---
 
