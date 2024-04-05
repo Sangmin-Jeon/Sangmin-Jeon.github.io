@@ -9,7 +9,7 @@ tags: [iOS, UIKit]
 오늘은 **UIView**의 UITableViewCell SeparatorStyle에 대한 포스팅 입니다.  
 최근에 겪은 TablewView의 SeparatorStyle 설정 코드가 제대로 적용되지 않는 문제가 있었어서 해결 후 그 과정에 대해 공유하려고 합니다.  
 
-원인을 파악하고 해결하는 과정에서 이것저것 시도하다보니  
+원인을 파악하고 해결하는 과정에서 이것저것 시도하다보니   
 View의 생명주기와 객체 인스턴스의 생명주기도 다시 공부하게 되는 계기가 되었네요... 😅
 
 <br>
@@ -34,7 +34,7 @@ ViewController에서 viewModel의 데이터를 받아와 View에 바인딩 하�
 별거 없이 UITableView의 속성으로 **singleLine**과 **none**으로만 구분되며 여기서 저는 none으로 하여 Cell 구분선을 없애주려 하였습니다.     
 
 #### - 기존 코드 
-기존 코드에서는 TableView 초기 설정 코드를 View의 init 생성자에 작성한 후, ViewController의 전역으로 view인스턴스를 생성하였습니다.    
+기존 코드에서는 TableView 초기 설정 코드를 View의 init 생성자에 작성한 후, ViewController의 전역으로 view인스턴스를 생성하였습니다.      
 View객체의 초기화 과정에서 **tableView**의 초기 설정 코드를 **생성자(init)**에 작성하고     
 ViewController의 전역 변수로 **View 인스턴스**를 생성하였습니다.  
 이로 인해 **viewDidLoad**가 호출되기 전에 **tableView의 속성**에 접근하여 제대로 설정되지 않는 문제가 발생 했던겁니다.   
@@ -46,9 +46,9 @@ ViewController의 전역 변수로 **View 인스턴스**를 생성하였습니�
 ## 문제 해결
 ---
 View 인스턴스의 생성 시점을 조정하였습니다.  
-ViewController의 **viewDidLoad** 메서드에서 View 인스턴스를 생성하고, 이를 View 계층에 추가 하였습니다.  
-이렇게 하면 viewDidLoad가 호출되는 시점에 올바른 초기화가 이루어지며, 안전하게 tableView의 속성에 접근할 수 있습니다.  
-즉, View 계층 구조가 로드되고 설정된 후 tableView속성에 접근하는 방식으로 해결하였습니다.  
+ViewController의 **viewDidLoad** 메서드에서 View 인스턴스를 생성하고, 이를 View 계층에 추가 하였습니다.    
+이렇게 하면 viewDidLoad가 호출되는 시점에 올바른 초기화가 이루어지며, 안전하게 tableView의 속성에 접근할 수 있습니다.    
+즉, View 계층 구조가 로드되고 설정된 후 tableView속성에 접근하는 방식으로 해결하였습니다.    
 
 #### - 수정한 코드
 <script src="https://gist.github.com/Sangmin-Jeon/ad0d54b1148f8ff8c2072f6e83d93af3.js"></script>
@@ -61,7 +61,10 @@ ViewController의 **viewDidLoad** 메서드에서 View 인스턴스를 생성하
 ## 배운점
 ---
 View객체는 viewDidLoad가 호출되는 시점에 초기화가 이루어져야 안정적으로 동작할 수 있다는것을 알게되었습니다.  
-따라서 View의 초기화 코드를 올바른 시점에 위치시키는 것이 중요하고 그렇게 하는것이   
-추후 유지보수 측면에서도 View의 추가나 초기화 코드를 관리하기 쉽다는것을 느꼈습니다. 
+그리고 이번에 tableView 속성들과 관련 코드들을 한곳에서 관리 함으로서 추후 유지보수 측면에서도  
+View의 추가나 초기화 코드를 보기에도 쉽고 관리하기도 편하다는것을 느꼈습니다 🙂
+
+앞으로 UI관련 코드 작성 시 이런식으로 관리 해봐야겠습니다.  
+
 
 
