@@ -51,7 +51,7 @@ ViewController의 **viewDidLoad** 메서드에서 View 인스턴스를 생성하
 즉, View 계층 구조가 로드되고 설정된 후 tableView속성에 접근하는 방식으로 해결하였습니다.    
 
 #### - 수정한 코드
-<script src="https://gist.github.com/Sangmin-Jeon/ad0d54b1148f8ff8c2072f6e83d93af3.js"></script>
+<script src="https://gist.github.com/Sangmin-Jeon/2ae9ae35d0831eb8b7e8d69802265a58.js"></script>
 
 추가적으로 코드의 깔끔함과 유지 보수성 강화하기 위해 기존의 init에 있던 tableView 초기 설정 코드를 View 내부에 있는 tableView 선언 시   
 적용하도록 수정하여 코드를 더 깔끔하고 유지 보수하기 좋게 수정하였습니다.  
