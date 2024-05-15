@@ -32,7 +32,7 @@ Observable을 구독하여 이벤트를 받는 구독자라고 생각하시면 �
 
 이렇게 하나의 Observable을 여러개의 Observer가 구독할 수도 있습니다.  
 Swift에서 기본으로 제공하는 NotificationCenter를 생각하시면 이해가 쉬울것 같네요.  
-
+ 
 <br>
 
 ## Observer가 이벤트를 받고 처리하는 방식
